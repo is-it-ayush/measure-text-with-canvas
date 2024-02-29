@@ -1,12 +1,13 @@
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
-const inter = Inter({
+const font = Poppins({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`font-poppins ${font.variable}`}>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
