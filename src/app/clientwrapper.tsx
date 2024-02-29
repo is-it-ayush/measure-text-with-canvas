@@ -28,7 +28,7 @@ export const ClientWrapper = () => {
     let currentLine = "";
     let currentLength = 0;
     for (let i = 0; i <= words.length; i++) {
-      let word = words[i];
+      const word = words[i];
       const wordLength = wordLengths[i] ?? 0;
       const newLength = currentLength + wordLength;
       if (i === words.length) {
