@@ -6,6 +6,6 @@ you can measure elements with canvas but it's not perfect to the browser render.
 such example of an effect I was trying to build. I wanted to measure a paragraph and split it
 into lines similar to how the browser would render lines without splitting.
 
-- code: [clientwrapper.tsx](./src/app/clientwrapper.tsx).
+- code: [parallax-text.tsx](./src/app/_components/parallax-text.tsx).
 - deployment: [https://measure-canvas-text.vercel.app/](https://measure-canvas-text.vercel.app/)
 - helpful bog: https://erikonarheim.com/posts/canvas-text-metrics/
